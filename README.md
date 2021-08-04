@@ -1,2 +1,4 @@
 # Game_TBN
-This is where we will put info about the game once we actually have something
+
+Use this to get started
+https://github.com/Bmarschall/Game_TBN/issues/1
