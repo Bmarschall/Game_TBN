@@ -5,25 +5,28 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 0
     path: Assets/Scenes/Doms Scene.unity
     guid: 49b4be2464190c24e97c16795158f96f
-  - enabled: 1
+  - enabled: 0
     path: Assets/Tutorial Resources/Scenes/0 Main Menu.unity
     guid: df84dcfc3f6f347468d3eaa8e2c6c4d5
-  - enabled: 1
+  - enabled: 0
     path: Assets/Tutorial Resources/Scenes/4 Battle Arena.unity
     guid: d9c88b75d7b137940a9c1e54114b559d
-  - enabled: 1
+  - enabled: 0
     path: Assets/Tutorial Resources/Scenes/3 Game Over.unity
     guid: bf6926a4950f37b419d042eeca29c0c2
-  - enabled: 1
+  - enabled: 0
     path: Assets/Tutorial Resources/Scenes/2 Field.unity
     guid: 587c6b23eb69c0c41b3e1420dfca916c
-  - enabled: 1
+  - enabled: 0
     path: Assets/Tutorial Resources/Scenes/1 Town.unity
     guid: ec11204e711530141bd306c2cb7ec626
+  - enabled: 1
+    path: Assets/Scenes/Ocean.unity
+    guid: 417aee43c4e66924baf7474323e1c189
   m_configObjects: {}

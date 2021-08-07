@@ -29,7 +29,7 @@ public class DialogueManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       // dialogueUI.setActive(false);
+        dialogueUI.SetActive(false);
     }
 
     void onClick()
@@ -72,7 +72,7 @@ public class DialogueManager : MonoBehaviour
     {
         //set up dynamic Convo - 1+ people, pass people in convo int or something idk
         isSpeaking = true;
-        //dialogueUI.SetActive(true);
+        dialogueUI.SetActive(true);
         characterNameText.text = dialogue.name;
         characterText.text = dialogue.lineOfDialogue[0];
         characterNameText.text = dialogue.name2;
