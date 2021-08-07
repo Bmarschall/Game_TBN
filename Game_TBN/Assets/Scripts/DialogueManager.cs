@@ -29,7 +29,7 @@ public class DialogueManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        dialogueUI.SetActive(false);
+        dialogueUI.SetActive(true);
     }
 
     void onClick()
