@@ -15,7 +15,7 @@ public class DialogueManager : MonoBehaviour
     bool isSpeaking = false;
 
     public GameObject player;
-    public GameObject dialogueUI;
+    //public GameObject dialogueUI;
 
     //TODO: Go back and rename all this character crap it's too confusing
     public Text characterText;
@@ -23,48 +23,27 @@ public class DialogueManager : MonoBehaviour
     public Text character2Text;
     public Text character2NameText;
 
-    float curResponseTracker = 0;
-
+    int dialogueIndex = 0;
 
     // Start is called before the first frame update
     void Start()
     {
-        dialogueUI.SetActive(true);
+       // dialogueUI.SetActive(false);
+        return;
     }
 
-    void onClick()
+    public void onClicked()
     {
-        if (Input.GetKeyDown(KeyCode.E) && isSpeaking == false)
+        if (dialogueIndex == 0)
         {
             startConversation();
         }
-        else if (Input.GetKeyDown(KeyCode.E) && isSpeaking == true)
+        if (dialogueIndex < dialogue.lineOfDialogue.Length - 1)
         {
-            endDialogue();
-        }
-        if (curResponseTracker == 0 && dialogue.lineOfDialogue.Length >= 0)
-        {
-            characterText.text = dialogue.lineOfDialogue[0];
-            if (Input.GetKeyDown(KeyCode.Return))
-            {
-                character2Text.text = dialogue.otherLineOfDialogue[1];
-            }
-        }
-        else if (curResponseTracker == 1 && dialogue.lineOfDialogue.Length >= 1)
-        {
-            characterText.text = dialogue.lineOfDialogue[1];
-            if (Input.GetKeyDown(KeyCode.Return))
-            {
-                character2Text.text = dialogue.otherLineOfDialogue[2];
-            }
-        }
-        else if (curResponseTracker == 2 && dialogue.lineOfDialogue.Length >= 2)
-        {
-            characterText.text = dialogue.lineOfDialogue[2];
-            if (Input.GetKeyDown(KeyCode.Return))
-            {
-                character2Text.text = dialogue.otherLineOfDialogue[3];
-            }
+            characterText.text = dialogue.lineOfDialogue[dialogueIndex];
+            character2Text.text = dialogue.otherLineOfDialogue[dialogueIndex];
+            dialogueIndex++;
+
         }
     }
 
@@ -72,7 +51,7 @@ public class DialogueManager : MonoBehaviour
     {
         //set up dynamic Convo - 1+ people, pass people in convo int or something idk
         isSpeaking = true;
-        dialogueUI.SetActive(true);
+        //dialogueUI.SetActive(true);
         characterNameText.text = dialogue.name;
         characterText.text = dialogue.lineOfDialogue[0];
         characterNameText.text = dialogue.name2;

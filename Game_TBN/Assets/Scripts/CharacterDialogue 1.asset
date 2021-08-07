@@ -10,15 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6a7886c7e49ceeb4392cc1957e8f6a04, type: 3}
-  m_Name: CharacterDialogue
+  m_Name: CharacterDialogue 1
   m_EditorClassIdentifier: 
-  name: Jeff
-  name2: sdf
-  lineOfDialogue:
-  - hi
-  - hello
-  - goodbye
-  otherLineOfDialogue:
-  - hi
-  - hi there
-  - you betcha
+  name: 
+  name2: 
+  lineOfDialogue: []
+  otherLineOfDialogue: []
