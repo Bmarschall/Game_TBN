@@ -54,7 +54,7 @@ public class DialogueManager : MonoBehaviour
         //dialogueUI.SetActive(true);
         characterNameText.text = dialogue.name;
         characterText.text = dialogue.lineOfDialogue[0];
-        characterNameText.text = dialogue.name2;
+        character2NameText.text = dialogue.name2;
         character2Text.text = dialogue.otherLineOfDialogue[0];
     }
     void endDialogue()
