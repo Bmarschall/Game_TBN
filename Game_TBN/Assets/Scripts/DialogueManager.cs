@@ -14,8 +14,9 @@ public class DialogueManager : MonoBehaviour
 
     bool isSpeaking = false;
 
-    public GameObject player;
     //public GameObject dialogueUI;
+    public GameObject player;
+    public GameObject capsule;
 
     //TODO: Go back and rename all this character crap it's too confusing
     public Text characterText;
@@ -24,6 +25,8 @@ public class DialogueManager : MonoBehaviour
     public Text character2NameText;
 
     int dialogueIndex = 0;
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -34,6 +37,7 @@ public class DialogueManager : MonoBehaviour
 
     public void onClicked()
     {
+        //capsule.GetComponent<Dialogue>();
         if (dialogueIndex == 0)
         {
             startConversation();
@@ -43,7 +47,6 @@ public class DialogueManager : MonoBehaviour
             characterText.text = dialogue.lineOfDialogue[dialogueIndex];
             character2Text.text = dialogue.otherLineOfDialogue[dialogueIndex];
             dialogueIndex++;
-
         }
     }
 
