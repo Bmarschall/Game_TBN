@@ -16,7 +16,6 @@ public class DialogueManager : MonoBehaviour
 
     //public GameObject dialogueUI;
     public GameObject player;
-    public GameObject capsule;
 
     //TODO: Go back and rename all this character crap it's too confusing
     public Text characterText;
@@ -31,7 +30,7 @@ public class DialogueManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       // dialogueUI.SetActive(false);
+        //dialogueUI.SetActive(false);
         return;
     }
 
@@ -63,7 +62,7 @@ public class DialogueManager : MonoBehaviour
     void endDialogue()
     {
         isSpeaking = false;
-       // dialogueUI.SetAtive(false);
+        //dialogueUI.SetActive(false);
     }
 
     //float distance;
