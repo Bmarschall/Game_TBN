@@ -41,7 +41,7 @@ public class DialogueManager : MonoBehaviour
         {
             startConversation();
         }
-        if (dialogueIndex < dialogue.lineOfDialogue.Length - 1)
+        if (dialogueIndex < dialogue.lineOfDialogue.Length )
         {
             characterText.text = dialogue.lineOfDialogue[dialogueIndex];
             character2Text.text = dialogue.otherLineOfDialogue[dialogueIndex];
